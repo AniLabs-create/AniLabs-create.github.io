@@ -5,33 +5,36 @@ import FadeInSection from "./FadeInSection";
 const About = () => {
   const one = (
     <p>
-      I am currently a <b>Software Engineer</b> at
-      <a href="https://www.ads.google.com/"> Google</a>, where I help build
-      autobidder models that make Google Search money. Previously, I was at{" "}
-      <a href="https://www.aboutamazon.com/"> Amazon</a> and{" "}
-      <a href="https://newsroom.pinterest.com/company/"> Pinterest.</a>
+      I am a first-year <b>Computer Science &amp; Engineering</b> student at{" "}
+      <a href="https://manipal.edu/mit.html">MIT Bengaluru</a>, learning by
+      building — from full-stack web apps to machine learning models. I am
+      currently working on my major project: a{" "}
+      <b>neural-controlled drone</b>.
     </p>
   );
   const two = (
     <p>
-      In my free time, I’m nerdy about tech gadgets, love literary fiction, and
-      play way too many battle royale games. Oh, I make content too.
+      Back in class 8, I taught Python to two students from Indiana, USA — my
+      first experience sharing code with the world. I'm also a published
+      author: two books on Amazon and an ongoing webnovel on RoyalRoad. I
+      only started LeetCode recently, since I was more focused on building
+      projects first — but I'm solving regularly now.
     </p>
   );
 
   const techStack = [
     "Python",
-    "Typescript",
-    "React.js",
-    "Java",
-    "Javascript ES6+",
+    "C++",
+    "MERN Stack",
+    "Flutter",
+    "AI / ML",
   ];
 
   return (
     <div id="about">
       <FadeInSection>
         <div className="section-header ">
-          <span className="section-title">/ about me</span>
+          <span className="section-title"><span className="section-number">01.</span>about me</span>
         </div>
         <div className="about-content">
           <div className="about-description">
@@ -47,7 +50,7 @@ const About = () => {
             {two}
           </div>
           <div className="about-image">
-            <img alt="Gazi Jarin" src={"/assets/me2.jpg"} />
+            <img alt="Nizamuddin" src={"/assets/me2.jpg"} />
           </div>
         </div>
       </FadeInSection>

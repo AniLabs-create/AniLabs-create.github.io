@@ -64,14 +64,16 @@ const path = require('path');
             const b = pixels[i + 2];
             const brightness = (r + g + b) / (3 * 255);
 
-            const charIndex = Math.floor(brightness * (chars.length - 1));
+            // invert so dark regions get dense chars — correct on a light background
+            const charIndex =
+              chars.length - 1 - Math.floor(brightness * (chars.length - 1));
             const char = chars[charIndex];
 
             particles.push({
               x: Number(x.toFixed(1)),
               y: Number(y.toFixed(1)),
               char: char,
-              alpha: Number((0.4 + brightness * 0.6).toFixed(2))
+              alpha: Number((0.4 + (1 - brightness) * 0.6).toFixed(2))
             });
           }
         }

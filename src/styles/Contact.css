@@ -1,0 +1,97 @@
+#contact {
+  padding: 100px 0;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.contact-intro {
+  color: var(--slate);
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 36px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-row {
+  display: flex;
+  gap: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-row {
+    flex-direction: column;
+  }
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: "Sora", sans-serif;
+  font-size: 15px;
+  color: var(--lightest-slate);
+  background: var(--light-navy);
+  border: 1px solid var(--lightest-navy);
+  border-radius: 10px;
+  padding: 14px 16px;
+  width: 100%;
+  resize: vertical;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--green-bright);
+  box-shadow: 0 0 0 3px var(--green-tint);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--slate);
+  opacity: 0.7;
+}
+
+.contact-submit {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Sora", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--green-bright);
+  background: transparent;
+  border: 1px solid var(--green-bright);
+  border-radius: 999px;
+  padding: 12px 28px;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.contact-submit:hover {
+  background: var(--green-tint);
+  transform: translateY(-2px);
+}
+
+.contact-submit:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.contact-note {
+  font-family: "Sora", sans-serif;
+  font-size: 13.5px;
+  color: var(--light-slate);
+}
+
+.contact-note--error {
+  color: #b3423a;
+}
+
+.contact-note a {
+  color: var(--green-bright);
+}

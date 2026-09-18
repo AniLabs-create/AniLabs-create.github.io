@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import BorderColorIcon from "@mui/icons-material/BorderColor";
+import LeetCodeIcon from "./LeetCodeIcon";
 import "../styles/NavBar.css";
 
 const NavBar = () => {
@@ -37,7 +37,7 @@ const NavBar = () => {
       onToggle={(isExpanded) => setExpanded(isExpanded)}
     >
       <Container>
-        <Navbar.Brand href="/">Gazi Jarin</Navbar.Brand>
+        <Navbar.Brand href="/">Nizamuddin</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto" onSelect={() => setExpanded(false)}>
@@ -45,24 +45,28 @@ const NavBar = () => {
             <Nav.Link href="/#about">About</Nav.Link>
             <Nav.Link href="/#experience">Experience</Nav.Link>
             <Nav.Link href="/#projects">Software</Nav.Link>
-            <Nav.Link href="/#hardware-projects">Hardware</Nav.Link>
-            <Nav.Link href="/#art">Art</Nav.Link>
+            <Nav.Link href="/#books">Books</Nav.Link>
+            <Nav.Link href="/#contact">Contact</Nav.Link>
           </Nav>
           <Nav className="ms-auto" onSelect={() => setExpanded(false)}>
-            <Nav.Link href="mailto:gazijarin@gmail.com">
+            <Nav.Link href="mailto:itsnizamuddin08@gmail.com">
               <EmailRoundedIcon style={{ fontSize: 20 }} />
             </Nav.Link>
-            <Nav.Link href="https://github.com/gazijarin" target="_blank">
+            <Nav.Link href="https://github.com/AniLabs-create" target="_blank">
               <GitHubIcon style={{ fontSize: 19 }} />
             </Nav.Link>
             <Nav.Link
-              href="https://www.linkedin.com/in/gazijarin/"
+              href="https://leetcode.com/u/nizamuddin_dev/"
+              target="_blank"
+              title="LeetCode — started recently, solving regularly now"
+            >
+              <LeetCodeIcon style={{ width: 20, height: 20 }} />
+            </Nav.Link>
+            <Nav.Link
+              href="https://www.instagram.com/nizamuddinworlld"
               target="_blank"
             >
-              <LinkedInIcon style={{ fontSize: 21 }} />
-            </Nav.Link>
-            <Nav.Link href="https://medium.com/@gazijarin.ai" target="_blank">
-              <BorderColorIcon style={{ fontSize: 20 }} />
+              <InstagramIcon style={{ fontSize: 20 }} />
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

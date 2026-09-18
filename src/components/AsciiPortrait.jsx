@@ -95,13 +95,14 @@ const AsciiPortrait = () => {
           const g = pixels[i + 1];
           const b = pixels[i + 2];
           const brightness = (r + g + b) / (3 * 255);
-          const charIndex = Math.floor(brightness * (chars.length - 1));
-          
+          // invert so dark regions get dense chars — correct on a light background
+          const charIndex = chars.length - 1 - Math.floor(brightness * (chars.length - 1));
+
           rawParticles.push({
             x: Number(x.toFixed(1)),
             y: Number(y.toFixed(1)),
             char: chars[charIndex],
-            alpha: Number((0.4 + brightness * 0.6).toFixed(2)),
+            alpha: Number((0.4 + (1 - brightness) * 0.6).toFixed(2)),
           });
         }
       }
@@ -184,7 +185,7 @@ const AsciiPortrait = () => {
         
         const isActive = mouse.active || particleTime < 3.0;
         const shimmerVal = isActive ? Math.sin(elapsed * 2 + p.shimmer) * 0.1 : 0;
-        p.currentAlpha = Math.max(0, p.baseAlpha * easedFade + shimmerVal);
+        p.currentAlpha = Math.min(1, Math.max(0, p.baseAlpha * 1.35 * easedFade + shimmerVal));
 
         const moveProgress = Math.min(particleTime / 2.5, 1);
         const easedMove = 1 - Math.pow(1 - moveProgress, 3);
@@ -232,7 +233,7 @@ const AsciiPortrait = () => {
         p.x += p.vx;
         p.y += p.vy;
 
-        ctx.fillStyle = `rgba(100, 255, 218, ${p.currentAlpha})`;
+        ctx.fillStyle = `rgba(22, 28, 44, ${p.currentAlpha})`;
         ctx.fillText(p.char, p.x, p.y);
       });
     };

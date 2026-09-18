@@ -73,7 +73,7 @@
 .explore-link {
   order: 2;
   margin-left: 20px;
-  font-family: "NTR", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 18px;
   color: var(--green-bright);
   text-decoration: none;
@@ -106,7 +106,7 @@
 }
 
 .card-title {
-  font-family: "NTR", sans-serif;
+  font-family: "Sora", sans-serif;
   color: var(--lightest-slate);
   font-size: 24px;
   font-weight: bold;
@@ -114,7 +114,7 @@
 
 
 .card-desc {
-  font-family: "NTR", sans-serif;
+  font-family: "Sora", sans-serif;
   color: var(--slate);
   font-size: 18px;
   padding-bottom: 40px;
@@ -124,7 +124,7 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-family: "NTR", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 14px;
   color: var(--green-bright);
   border: 1px solid var(--green-bright);
@@ -136,11 +136,11 @@
 }
 
 .project-badge:hover {
-  background: rgba(100, 255, 218, 0.08);
+  background: rgba(76, 95, 213, 0.08);
 }
 
 .card-tech {
-  font-family: "NTR", sans-serif;
+  font-family: "Sora", sans-serif;
   color: var(--slate);
   font-size: 16px;
 }
@@ -177,7 +177,7 @@
 }
 
 .carousel-caption {
-  font-family: "NTR", sans-serif;
+  font-family: "Sora", sans-serif;
   max-width: 500px;
   right: unset !important;
   left: 25% !important;
@@ -191,14 +191,14 @@
 }
 
 .carousel-caption p {
-  font-family: "NTR", sans-serif;
+  font-family: "Sora", sans-serif;
   font-weight: bold;
   font-size: 18px;
   color: var(--lightest-slate);
 }
 
 .carousel-caption p.techStack {
-  font-family: "NTR", sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 14px;
   font-weight: bold;
   color: var(--green-bright);

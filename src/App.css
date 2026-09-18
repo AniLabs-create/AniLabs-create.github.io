@@ -29,7 +29,7 @@
 }
 
 .App {
-  font-family: "NTR";
+  font-family: "Sora";
   background-color: var(--navy);
   color: var(--lightest-slate);
   display: flex;
@@ -95,10 +95,18 @@ a:hover {
 }
 
 .section-title {
-  font-family: "NTR", sans-serif;
+  font-family: "Sora", sans-serif;
   color: var(--lightest-slate);
   font-size: 46px;
   font-weight: bold;
+}
+
+.section-number {
+  font-family: "Fraunces", serif;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--green-bright);
+  margin-right: 6px;
 }
 
 @media only screen and (max-width: 800px) {

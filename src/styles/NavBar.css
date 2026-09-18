@@ -1,7 +1,7 @@
 .navbar {
-    background-color: var(--navy) !important;
+    background-color: rgba(251, 252, 254, 0.88) !important;
     color: var(--lightest-slate) !important;
-    font-family: 'NTR';
+    font-family: 'Sora';
     font-weight: bold;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--lightest-navy);

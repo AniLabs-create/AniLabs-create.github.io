@@ -50,38 +50,37 @@ const JobList = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   const experienceItems = {
-    Google: {
-      jobTitle: "Software Engineer III @",
-      duration: "JAN 2025 - PRESENT",
+    Tutoring: {
+      jobTitle: "Python Tutor @",
+      duration: "CLASS 8",
       desc: [
-        "Built and launched large-scale machine learning-driven conversion autobidding models at Google scale, influencing bidding decisions across millions of advertisers and users",
-        "Integrated Google Gemini encoders into bidding models to enhance feature representation and improve prediction performance",
-        "Led end-to-end model development (data, training, evaluation, and production launch) for Proxybidder ML systems, directly driving multi-million-dollar revenue impact through improved conversion efficiency",
+        "Taught Python programming to two students from Indiana, USA — planning lessons, walking through fundamentals, and guiding them to write their own programs",
+        "Handled the full teaching experience solo: live coding sessions, practice exercises, and code reviews over video calls",
       ],
     },
-    Pinterest: {
-      jobTitle: "Software Engineer II @",
-      duration: "JUL 2024 - JAN 2025",
+    "MIT Bengaluru": {
+      jobTitle: "B.Tech CSE Student @",
+      duration: "1ST YEAR - PRESENT",
       desc: [
-        "Led the development of a generative AI solution using LLMs for advanced prompt engineering, improving SEO and ad relevance, and resulting in a 20% increase in click-through rates, ad revenue and business visibility",
-        "Designed and developed an intuitive user interface for a prompt management system for 500K+ users, with key focus on accessibility, real-time collaboration features, and dynamic data visualization",
+        "Studying Computer Science & Engineering at Manipal Institute of Technology, Bengaluru, with a focus on AI/ML and software development",
+        "Building a neural-controlled drone as my major project — mapping neural signals into flight commands",
       ],
     },
-    Amazon: {
-      jobTitle: "Software Development Engineer II @",
-      duration: "JUL 2022 - MAY 2024",
+    AniLabs: {
+      jobTitle: "Founder & Developer @",
+      duration: "ONGOING",
       desc: [
-        "Led development of end-to-end region build automation across Route 53 (AWS's DNS web service).  This enabled the launch of customer-facing global services in new regions within a day, a significant reduction from the previous time-frame of a month.",
-        "Re-built Route 53's core domain management and DNS systems to provide a better user experience to millions of customers.",
+        "Building personal projects across AI/ML and full-stack development: SafetyAI (a safety-report risk classifier), a voice agent on Groq, and a Flask + SQLite college event tracker",
+        "Exploring computer vision, automation, and embedded systems — always with something new in progress",
       ],
     },
-    Wattpad: {
-      jobTitle: "Software Engineer Intern @",
-      duration: "MAY 2020 - APR 2021",
+    "LeetCode & others": {
+      jobTitle: "The self-improvement corner",
+      duration: "ONGOING",
       desc: [
-        "Developed a responsive React web page (the new Story Details) from scratch, both on client and server side, for an app with massive scale (2 billion daily requests).",
-        "Iteratively built web experiences for 80 million users across high-traffic pages.",
-        "Collaborated with senior engineers and product management following best practices for the full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations.",
+        "Started LeetCode recently — I was more focused on building projects first, but I'm solving problems regularly now",
+        "Typing speed on MonkeyType: 65 WPM at 100% accuracy. Completely unnecessary to mention this, but I'm kinda proud of it",
+        "Currently working with a team of MTech seniors and 3rd-year students for a datathon at IIM Bangalore",
       ],
     },
   };
@@ -124,7 +123,7 @@ const JobList = () => {
             {...a11yProps(i, isMobile)} 
             sx={{
               color: "var(--slate)",
-              fontFamily: "NTR",
+              fontFamily: "Sora",
               fontSize: "14px",
               textAlign: isMobile ? "center" : "left",
               alignItems: isMobile ? "center" : "flex-start",

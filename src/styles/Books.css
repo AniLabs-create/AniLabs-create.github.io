@@ -1,0 +1,93 @@
+#books {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.books-description {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  color: var(--slate);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.books-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.books-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 28px;
+}
+
+.books-card {
+  width: 230px;
+  padding: 22px 18px 18px;
+  background: var(--light-navy);
+  border: 1px solid var(--lightest-navy);
+  border-radius: 14px;
+  transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.books-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--green-bright);
+  box-shadow: 0 12px 30px var(--navy-shadow);
+}
+
+.books-cover-link {
+  display: block;
+  line-height: 0;
+  margin-bottom: 14px;
+}
+
+.books-cover {
+  height: 300px;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px var(--navy-shadow);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.books-cover-link:hover .books-cover {
+  transform: scale(1.03) rotate(-1deg);
+  box-shadow: 0 14px 28px var(--navy-shadow);
+}
+
+.books-title {
+  color: var(--lightest-slate);
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.books-platform {
+  font-family: "Sora", sans-serif;
+  font-size: 12.5px;
+  color: var(--green-bright);
+  text-transform: lowercase;
+  letter-spacing: 0.5px;
+}
+
+.books-status {
+  font-family: "Sora", sans-serif;
+  font-size: 12px;
+  color: var(--slate);
+  text-transform: lowercase;
+  letter-spacing: 0.5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .books-cover {
+    height: 240px;
+  }
+}
